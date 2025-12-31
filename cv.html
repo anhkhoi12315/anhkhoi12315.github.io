@@ -42,6 +42,9 @@
 
     <!-- CV Header -->
     <div class="cv-header">
+      <div class="cv-avatar">
+        <img src="assets/avatar.jpg" alt="Nguyễn Anh Khôi" />
+      </div>
       <h1>Nguyễn Anh Khôi</h1>
       <p class="cv-title">Website Developer</p>
       <div class="cv-contact">
@@ -95,18 +98,57 @@
 
     <!-- Projects Section -->
     <section class="cv-section">
-      <h2 class="cv-section-title">Dự Án Nổi Bật</h2>
+      <h2 class="cv-section-title">Dự Án Cá Nhân Tiêu Biểu</h2>
       
       <div class="cv-project">
         <h3>💎 Jewelry E-commerce Website</h3>
-        <p>Website bán trang sức trực tuyến với giao diện sang trọng, hiện đại. Tích hợp giỏ hàng, thanh toán online, quản lý sản phẩm và đơn hàng.</p>
-        <p><strong>Tech Stack:</strong> HTML5/CSS3, JavaScript, Bootstrap, PHP, MySQL</p>
+        <p><strong>Công nghệ:</strong> HTML5/CSS3, JavaScript, Bootstrap, PHP, MySQL</p>
+        
+        <div class="cv-project-details">
+          <p><strong>Chi tiết công việc:</strong></p>
+          <ul>
+            <li><strong>Thiết kế giao diện (UI/UX):</strong> Triển khai giao diện người dùng hiện đại, sang trọng với Bootstrap framework, tối ưu hóa trải nghiệm mua sắm trực tuyến trên mọi thiết bị (responsive design).</li>
+            <li><strong>Hệ thống giỏ hàng:</strong> Xây dựng chức năng thêm/xóa/cập nhật sản phẩm trong giỏ hàng với JavaScript, lưu trữ tạm thời trên LocalStorage và đồng bộ với database khi thanh toán.</li>
+            <li><strong>Tích hợp thanh toán online:</strong> Kết nối với cổng thanh toán để xử lý giao dịch an toàn, xác thực thông tin khách hàng và gửi email xác nhận đơn hàng.</li>
+            <li><strong>Phát triển Backend với PHP:</strong> Xây dựng RESTful API để xử lý các logic nghiệp vụ như quản lý sản phẩm, đơn hàng, khách hàng, tính toán giá, áp dụng mã giảm giá.</li>
+            <li><strong>Quản lý Database với MySQL:</strong> Thiết kế cơ sở dữ liệu quan hệ với các bảng products, orders, customers, categories, tối ưu query và indexing để tăng hiệu suất.</li>
+            <li><strong>Admin Dashboard:</strong> Xây dựng trang quản trị cho phép quản lý sản phẩm, theo dõi đơn hàng, thống kê doanh thu với biểu đồ trực quan.</li>
+            <li><strong>Tìm kiếm & Lọc sản phẩm:</strong> Implement chức năng search với AJAX, filter theo danh mục, giá, đánh giá để nâng cao trải nghiệm người dùng.</li>
+          </ul>
+        </div>
       </div>
 
       <div class="cv-project">
         <h3>🌤️ Weather Forecast Application</h3>
-        <p>Ứng dụng dự báo thời tiết với giao diện trực quan, hiển thị thông tin thời tiết real-time và dự báo 7 ngày.</p>
-        <p><strong>Tech Stack:</strong> React.js, Weather API, Geolocation, LocalStorage</p>
+        <p><strong>Công nghệ:</strong> React.js, Weather API, Geolocation API, LocalStorage, Axios, CSS Modules</p>
+        
+        <div class="cv-project-details">
+          <p><strong>Chi tiết công việc:</strong></p>
+          <ul>
+            <li><strong>Xây dựng SPA với React.js:</strong> Tạo ứng dụng single-page với React hooks (useState, useEffect, useContext), component-based architecture để tái sử dụng code hiệu quả.</li>
+            <li><strong>Tích hợp Weather API:</strong> Sử dụng OpenWeatherMap API để lấy dữ liệu thời tiết real-time và dự báo 7 ngày, xử lý async/await với Axios.</li>
+            <li><strong>Auto-detect location:</strong> Implement Geolocation API để tự động xác định vị trí người dùng và hiển thị thời tiết địa phương ngay khi mở app.</li>
+            <li><strong>City search & favorites:</strong> Xây dựng chức năng tìm kiếm thành phố với debounce, lưu danh sách yêu thích vào LocalStorage để truy cập nhanh.</li>
+            <li><strong>Responsive design:</strong> Thiết kế giao diện adaptive hoạt động mượt mà trên desktop, tablet, mobile với CSS Flexbox/Grid và media queries.</li>
+            <li><strong>State Management:</strong> Quản lý global state với Context API để chia sẻ dữ liệu giữa các component mà không cần prop drilling.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-project">
+        <h3>📝 Personal Blog Platform</h3>
+        <p><strong>Công nghệ:</strong> Node.js, Express, MongoDB, Vue.js, JWT Authentication</p>
+        
+        <div class="cv-project-details">
+          <p><strong>Chi tiết công việc:</strong></p>
+          <ul>
+            <li><strong>Backend API với Node.js/Express:</strong> Xây dựng RESTful API cho CRUD operations của bài viết, comments, users với middleware authentication.</li>
+            <li><strong>Database với MongoDB:</strong> Sử dụng Mongoose ODM để thiết kế schema, validation, và query optimization cho hiệu suất cao.</li>
+            <li><strong>JWT Authentication:</strong> Implement hệ thống đăng nhập/đăng ký an toàn với JWT tokens, bcrypt password hashing, refresh token mechanism.</li>
+            <li><strong>Frontend với Vue.js:</strong> Xây dựng giao diện quản lý bài viết với Vue Router, Vuex state management, và rich text editor (Quill.js).</li>
+            <li><strong>Upload & Storage:</strong> Tích hợp Cloudinary/AWS S3 để upload và lưu trữ hình ảnh, tối ưu kích thước và format ảnh trước khi lưu.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
