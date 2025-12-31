@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Blog cá nhân | Nguyễn Anh Khôi"/>
+  <title>Bài viết | Nguyễn Anh Khôi</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" title="Về trang chủ">
+        <div class="logo">AK</div>
+        <div>
+          <span data-profile="name">Nguyễn Anh Khôi</span>
+          <div class="subtitle">Blog cá nhân</div>
+        </div>
+      </a>
+
+      <div class="right">
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Mở menu" aria-expanded="false">☰</button>
+        <div class="menu" id="menu">
+          <a class="chip" data-page="index.html" href="index.html">Trang chủ</a>
+          <a class="chip" data-page="about.html" href="about.html">Giới thiệu</a>
+          <a class="chip" data-page="education.html" href="education.html">Học tập</a>
+          <a class="chip" data-page="goals.html" href="goals.html">Mục tiêu</a>
+          <a class="chip" data-page="certificates.html" href="certificates.html">Chứng chỉ</a>
+          <a class="chip" data-page="posts.html" href="posts.html">Bài viết</a>
+          <a class="chip" data-page="contact.html" href="contact.html">Liên hệ</a>
+          <a class="chip" data-page="cv.html" href="cv.html">CV</a>
+        </div>
+        <button class="icon-btn" id="themeToggle" aria-label="Đổi theme">🌙</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="progress"></div>
+
+  <div class="wrap">
+
+  <div class="card section fade-up">
+    <div class="section-title">
+      <h2>Bài viết</h2>
+      <span>Tìm kiếm • Lọc theo chủ đề • Trang bài viết riêng</span>
+    </div>
+
+    <div class="row">
+      <input id="postSearch" type="text" placeholder="Tìm theo tiêu đề..." aria-label="Tìm theo tiêu đề" style="flex:1; min-width:220px;"/>
+      <div class="row">
+        <a class="chip filter-chip active" data-tag="all" href="javascript:void(0)">Tất cả</a>
+        <a class="chip filter-chip" data-tag="hanh-trinh" href="javascript:void(0)">Hành trình</a>
+        <a class="chip filter-chip" data-tag="ky-nang" href="javascript:void(0)">Kỹ năng</a>
+        <a class="chip filter-chip" data-tag="so-thich" href="javascript:void(0)">Sở thích</a>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="posts">
+      <article class="post fade-up" data-title="Ngày đầu làm quen môi trường đại học" data-tag="hanh-trinh">
+        <div class="tag">Hành trình</div>
+        <h3>Ngày đầu làm quen môi trường đại học</h3>
+        <p>
+          Bước vào môi trường đại học, mình học cách tự quản lý thời gian, chủ động kết nối bạn bè và làm quen với nhịp học mới.
+          Những điều nhỏ như đi học đúng giờ, ghi chép, tự học sau giờ đã giúp mình thích nghi nhanh hơn.
+        </p>
+        <div class="actions">
+          <div class="date">Cập nhật: ____/____/20__</div>
+          <a class="more" href="post-1.html">Đọc bài →</a>
+        </div>
+      </article>
+
+      <article class="post fade-up" data-title="Mình đang luyện tập điều gì" data-tag="ky-nang">
+        <div class="tag">Kỹ năng</div>
+        <h3>Mình đang luyện tập điều gì?</h3>
+        <p>
+          Mình tập trung vào 3 thứ: giao tiếp rõ ràng, làm việc nhóm hiệu quả và tư duy giải quyết vấn đề.
+          Mỗi lần làm bài nhóm là một lần mình học cách lắng nghe và sắp xếp công việc hợp lý hơn.
+        </p>
+        <div class="actions">
+          <div class="date">Cập nhật: ____/____/20__</div>
+          <a class="more" href="post-2.html">Đọc bài →</a>
+        </div>
+      </article>
+
+      <article class="post fade-up" data-title="Những thứ giúp mình nạp năng lượng" data-tag="so-thich">
+        <div class="tag">Sở thích</div>
+        <h3>Những thứ giúp mình nạp năng lượng</h3>
+        <p>
+          Khi cần thư giãn, mình thường nghe nhạc, vận động nhẹ hoặc dành thời gian cho sở thích cá nhân.
+          Nhờ vậy mình giữ được tinh thần thoải mái và quay lại việc học với năng lượng tốt hơn.
+        </p>
+        <div class="actions">
+          <div class="date">Cập nhật: ____/____/20__</div>
+          <a class="more" href="post-3.html">Đọc bài →</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="note">
+      <b>Mẹo:</b> Bạn chỉ cần chỉnh lại vài câu cho đúng trải nghiệm thật của bạn.
+      Muốn thêm bài mới: copy 1 thẻ <span class="kbd">article</span> và tạo thêm <span class="kbd">post-4.html</span>.
+    </div>
+  </div>
+
+    <div class="footer">© <span id="year"></span> <span data-profile="name">Nguyễn Anh Khôi</span> • Blog cá nhân (bài nộp) • HTML/CSS/JS thuần</div>
+  </div>
+
+  <button class="btn btn-primary" id="backToTop" title="Lên đầu trang">⬆️ Lên đầu</button>
+  <script src="assets/profile.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Blog cá nhân | Nguyễn Anh Khôi"/>
+  <title>Học tập | Nguyễn Anh Khôi</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" title="Về trang chủ">
+        <div class="logo">AK</div>
+        <div>
+          <span data-profile="name">Nguyễn Anh Khôi</span>
+          <div class="subtitle">Blog cá nhân</div>
+        </div>
+      </a>
+
+      <div class="right">
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Mở menu" aria-expanded="false">☰</button>
+        <div class="menu" id="menu">
+          <a class="chip" data-page="index.html" href="index.html">Trang chủ</a>
+          <a class="chip" data-page="about.html" href="about.html">Giới thiệu</a>
+          <a class="chip" data-page="education.html" href="education.html">Học tập</a>
+          <a class="chip" data-page="goals.html" href="goals.html">Mục tiêu</a>
+          <a class="chip" data-page="certificates.html" href="certificates.html">Chứng chỉ</a>
+          <a class="chip" data-page="posts.html" href="posts.html">Bài viết</a>
+          <a class="chip" data-page="contact.html" href="contact.html">Liên hệ</a>
+          <a class="chip" data-page="cv.html" href="cv.html">CV</a>
+        </div>
+        <button class="icon-btn" id="themeToggle" aria-label="Đổi theme">🌙</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="progress"></div>
+
+  <div class="wrap">
+
+  <div class="card section fade-up">
+    <div class="section-title">
+      <h2>Học tập</h2>
+      <span>Quá trình học • Kỹ năng • Định hướng</span>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h4>Thông tin học tập</h4>
+        <p>
+          Mình đang theo học tại <b data-profile="school">Đại học HUTECH</b> với chuyên ngành
+          <b data-profile="major">Công Nghệ Thông Tin</b>.
+          Mục tiêu là nắm chắc kiến thức nền và ứng dụng vào bài tập/đồ án một cách thực tế.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h4>Kỹ năng đang phát triển</h4>
+        <p style="margin-bottom:10px;">Mình rèn cả kỹ năng chuyên môn và kỹ năng mềm:</p>
+        <div id="skillPills" class="pills"></div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="grid">
+      <div class="panel">
+        <h4>Môn học/Chủ đề tiêu biểu</h4>
+        <p>
+          • Cơ sở dữ liệu & Lập trình cơ bản<br/>
+          • Lập trình hướng đối tượng (OOP) với Java<br/>
+          • Thiết kế & Phát triển Web (HTML, CSS, JavaScript)<br/>
+          • Mạng máy tính và Bảo mật thông tin<br/>
+          • Kỹ năng giao tiếp & Làm việc nhóm
+        </p>
+      </div>
+
+      <div class="panel">
+        <h4>Thói quen học</h4>
+        <p>
+          Mình đặt mục tiêu theo tuần, chia nhỏ việc và dành thời gian ôn tập sau mỗi buổi học.
+          Khi làm nhóm, mình ưu tiên giao tiếp rõ ràng và chủ động hỗ trợ để cả nhóm hoàn thành đúng hạn.
+        </p>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="timeline">
+      <div class="titem">
+        <div class="badge">2004</div>
+        <div class="tcontent">
+          <b>Mốc cá nhân</b>
+          Sinh năm 2004 — bắt đầu hành trình học tập và phát triển bản thân.
+        </div>
+      </div>
+      <div class="titem">
+        <div class="badge">Hiện tại</div>
+        <div class="tcontent">
+          <b>Sinh viên HUTECH</b>
+          Học tập đều đặn, làm bài tập/đồ án, tích lũy kỹ năng và chuẩn bị cho thực tập.
+        </div>
+      </div>
+      <div class="titem">
+        <div class="badge">Tiếp theo</div>
+        <div class="tcontent">
+          <b>Kế hoạch</b>
+          Hoàn thiện portfolio cá nhân, học thêm các framework web hiện đại (React, Vue.js), tìm kiếm cơ hội thực tập tại các công ty công nghệ.
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="panel">
+      <h4>Chứng chỉ</h4>
+      <p>Mình có trang riêng để tổng hợp chứng chỉ/khoá học.</p>
+      <div class="spacer"></div>
+      <a class="btn btn-primary" href="certificates.html">🏅 Xem danh sách chứng chỉ</a>
+    </div>
+  </div>
+
+    <div class="footer">© <span id="year"></span> <span data-profile="name">Nguyễn Anh Khôi</span> • Blog cá nhân (bài nộp) • HTML/CSS/JS thuần</div>
+  </div>
+
+  <button class="btn btn-primary" id="backToTop" title="Lên đầu trang">⬆️ Lên đầu</button>
+  <script src="assets/profile.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
